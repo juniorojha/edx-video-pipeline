@@ -98,13 +98,13 @@ celery_app_name:
 # can do multiple queues like so: foo,bar,baz
 # NOTE: celery_worker_high_queue is not being used and will be used when normal/premium/mass
 # video encodings feature is integrated with studio.
-celery_worker_high_queue:
-celery_worker_medium_queue: worker-medium-queue
-celery_worker_low_queue:
-celery_deliver_queue:
-celery_heal_queue:
-celery_online_heal_queue:
-celery_http_ingest_queue:
+celery_worker_high_queue: high_queue
+celery_worker_medium_queue: medium_queue
+celery_worker_low_queue: low_queue
+celery_deliver_queue: deliver_worker
+celery_heal_queue: heal_queue
+celery_online_heal_queue: online_heal_queue
+celery_http_ingest_queue: ingest_queue
 celery_threads: 1
 
 redis_broker:

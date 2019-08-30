@@ -94,7 +94,7 @@ veda_token_url:
 # ---
 # Celery Info
 # ---
-celery_app_name:
+celery_app_name: veda_production
 # can do multiple queues like so: foo,bar,baz
 # NOTE: celery_worker_high_queue is not being used and will be used when normal/premium/mass
 # video encodings feature is integrated with studio.

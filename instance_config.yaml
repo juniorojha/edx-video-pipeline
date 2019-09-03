@@ -13,6 +13,7 @@ SECRET_KEY: "a_random_string"
 FERNET_KEYS: ["a_random_string"]
 
 debug: True
+environment: production
 
 # LOCAL DOCKER
 #  default:

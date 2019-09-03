@@ -107,7 +107,7 @@ celery_online_heal_queue: online_heal_queue
 celery_http_ingest_queue: ingest_queue
 celery_threads: 1
 
-redis_broker:
+redis_broker: 10.129.103.141
 
 onsite_worker: False
 

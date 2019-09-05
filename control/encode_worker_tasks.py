@@ -8,6 +8,7 @@ from celery import Celery
 from VEDA.utils import get_config
 
 auth_dict = get_config()
+print("ye raha auth_dict", auth_dict)
 
 CEL_BROKER = 'redis://:@{redis_broker}:6379/0'.format(redis_broker=auth_dict['redis_broker'])
 

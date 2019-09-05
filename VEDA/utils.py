@@ -63,12 +63,14 @@ def get_config(yaml_config_file=DEFAULT_CONFIG_FILE_NAME):
 
     try:
         yaml_config_file = os.environ['VIDEO_PIPELINE_CFG']
+        print('backup ke liye check VIDEO_PIPELINE_CFG ', yaml_config_file)
     except KeyError:
         yaml_config_file = os.path.join(
             CONFIG_ROOT_DIR,
             yaml_config_file
         )
 
+    print('yaml_config_file ka path ', yaml_config_file)
     with open(yaml_config_file, 'r') as config:
         config_dict = yaml.safe_load(config)
 
